@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&family=Lexend:wght@400;500;600;700&family=Roboto:wght@400&display=swap');
+@import 'tailwindcss';
+
+/* Global baseline so the app uses full viewport without browser default margins. */
+html,
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	min-height: 100%;
+	scroll-behavior: smooth;
+}
+
+body {
+	overflow-x: hidden;
+	background-color: #E6E6E6;
+	font-family: 'Inter', sans-serif;
+}
+
+app-root {
+	display: block;
+	min-height: 100dvh;
+}
