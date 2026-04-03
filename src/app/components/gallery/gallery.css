@@ -1,0 +1,54 @@
+:host {
+  display: block;
+}
+
+.gallery-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-content {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.gallery-copy {
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.gallery-grid {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.gallery-column {
+  width: min(100%, 344px);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.gallery-card {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  box-shadow:
+    0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.gallery-card--landscape {
+  height: 260px;
+}
+
+.gallery-card--portrait {
+  height: 362px;
+}
