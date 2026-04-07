@@ -58,13 +58,19 @@ export class ButtonComponent {
 
     // Size
     switch(this.size) {
-      case 'hero':
-        if(this.variant === 'primary' || this.variant === 'secondary') {
-           classes.push('min-w-56', 'text-[20px]', 'px-12', 'py-4', 'text-lg', 'font-normal');
-           if(this.variant === 'primary') classes.push('shadow-[0_20px_45px_rgba(7,25,43,0.28)]');
-           if(this.variant === 'secondary') classes.push('shadow-[0_20px_45px_rgba(7,25,43,0.22)]');
-        }
-        break;
+case 'hero':
+  if (this.variant === 'primary' || this.variant === 'secondary') {
+    classes.push(
+      // Mobile: compact
+      'min-w-[120px]', 'px-5', 'py-3', 'text-[15px]',
+      // sm+: full hero size
+      'sm:min-w-56', 'sm:px-12', 'sm:py-4', 'sm:text-[20px]',
+      'font-normal'
+    );
+    if (this.variant === 'primary')  classes.push('shadow-[0_20px_45px_rgba(7,25,43,0.28)]');
+    if (this.variant === 'secondary') classes.push('shadow-[0_20px_45px_rgba(7,25,43,0.22)]');
+  }
+  break;
       case 'normal':
         classes.push('px-12', 'py-3', 'text-[16px]', 'font-normal');
         break;
